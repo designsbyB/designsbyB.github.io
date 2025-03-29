@@ -1,0 +1,242 @@
+@charset "utf-8";
+body {
+	background-color: black;
+	background:url(Maine-Photos/Maine-Photo3.jpg) no-repeat center;
+	background-size: cover;
+	animation: animate-maine 15s ease-in-out 0s infinite forwards running alternate-reverse;
+}
+@keyframes animate-maine{
+  0% {
+    background-image:url(Maine-Photos/Maine-Photo1.jpg);
+  }
+  33% {
+    background-image:url(Maine-Photos/Maine-Photo2.jpg);
+  }
+  67% {
+    background-image:url(Maine-Photos/Maine-Photo3.jpg);
+  }
+  100% {
+    background-image:url(Maine-Photos/Maine-Photo4.jpg);
+  }
+}
+.container1 {
+	width: 100%;
+	height: 650px;
+	margin: 40px 0px 30px 0px;
+}
+.container1-img {
+	width: 100%;
+	height: auto;
+	display: block;
+	opacity: 70%;
+	border: 4px solid #C66300;
+}
+nav {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+	justify-content: center;
+	margin-bottom: -200px;
+}
+a {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	align-content: center;
+	width: 200px;
+	height: 200px;
+	color: beige;
+	border-radius: 5px;
+	text-align: center;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	transition: font-size 0.5s linear 0s,
+	                color 0.5s linear 0s;
+}
+a:hover {
+	color: lightblue;
+	font-size: 2.8125em;
+}
+.home-button {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	justify-content: center;
+	font-family: "Amatic SC";
+	font-weight: bold;
+	font-size: 2.1875em;
+	filter: drop-shadow(5px 3px 10px #000000);
+	background:url(images/Leaf-Button1.png) no-repeat center;
+	background-size: cover;
+	z-index: 1;
+	position: relative;
+	bottom: 230px;
+}
+#videos-btn:hover {
+	color: lightblue;
+	font-size: 3.125em;
+}
+#videos-btn {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	justify-content: center;
+	font-family: "Amatic SC";
+	font-weight: bold;
+	font-size: 2.5em;
+	filter: drop-shadow(5px 3px 10px #000000);
+	background:url(Maine-page-images/video-reel5.png) no-repeat center;
+	background-size: cover;
+	z-index: 1;
+	position: relative;
+	bottom: 230px;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.15em;
+	transition: font-size 0.5s linear 0s,
+	                color 0.5s linear 0s;
+}
+.Maine-Title {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+}
+.welcome {
+	font: 900 5em "Dancing Script";
+	text-align: center;
+	display: block;
+	color: beige;
+	margin-bottom: 10px;
+	margin-top: -125px;
+	text-shadow: black 0.1em 0.1em 0.125em;
+	position: relative;
+	top: 200px;
+	z-index: 1;
+}
+h1 {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	width: 400px;
+	height: 150px;
+	margin: 20px;
+	margin-top: -150px;
+	margin-bottom: -20px;
+	flex: 2 3 150px;
+	font: 900 9.375em "Rammetto One";
+	color: transparent;
+	background:url(Maine-page-images/map-of-maine1.png) no-repeat center;
+	background-size: cover;
+	background-clip: text;
+	webkit-background-clip: text;
+	filter: drop-shadow(5px 3px 7px #000000);
+	position: relative;
+	top: 300px;
+	z-index: 1;
+}
+#lobster-btn:hover {
+	color: lightblue;
+	font-size: 3.125em;
+}
+#lobster-btn {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	justify-content: center;
+	font-family: "Amatic SC";
+	font-weight: bold;
+	font-size: 2.5em;
+	filter: drop-shadow(5px 3px 10px #000000);
+	background: url(Maine-page-images/lobster-button-img.png) no-repeat center;
+	background-size: 200px;
+	z-index: 1;
+	position: relative;
+	bottom: 230px;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.15em;
+	transition: font-size 0.5s linear 0s,
+	                color 0.5s linear 0s;
+}
+.lobster-container {
+	display: flex;
+	width: 100%;
+	height: 800px;
+	filter: drop-shadow(0px 0px 7px #F00);
+	margin: 10px 0px 10px 0px;
+}
+.lobster-text {
+	display: block;
+	color: white;
+	font-family: "Oswald";
+	font-weight: bold;
+	font-size: 1.875em;
+	text-shadow: black 0.05em 0.075em 0.05em;
+	background: url(Maine-page-images/Red-Lobster-with-view.jpg) no-repeat center;
+	background-size: cover;
+	padding: 25px 25px 25px 25px;
+	margin: 10px 0px 10px 0px;
+}
+section {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	margin: 20px;
+	flex-wrap: wrap;
+}
+iframe {
+	border: 3px solid orange;
+	border-radius: 10px;
+	margin: 40px;
+}
+#video-container {
+	display: flex;
+	margin: 10px;
+	margin-bottom: -60px;
+}
+#link-back-to-top {
+	font-family: "Amatic SC";
+	font-weight: bold;
+	font-size: 1.875em;
+	filter: drop-shadow(5px 3px 10px #000000);
+	margin: 0 auto;
+}
+@media only screen and (min-width: 360px) and (orientation: portrait) {
+	h1 {
+		height: 150px;
+		width: 200px;
+		font-size: 100px;
+	}
+	.welcome {
+		font-size: 4.375em;
+		margin-top: -40px;
+		margin-bottom: -20px;
+	}
+	.lobster-container {
+	    margin: 0px 0px 175px 0px;
+}
+    .lobster-text {
+		font-size: 1.5625em;
+		padding-top: 50px;
+		margin-top: -30px;
+	}
+    #video-container {
+	    margin-top: -175px;
+}
+    #lobster-btn {
+		background-size: 160px;
+	}
+	.home-button {
+		background-size: 160px;
+	}
+	#videos-btn {
+		background-size: 300px;
+	}
