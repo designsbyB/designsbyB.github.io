@@ -1,0 +1,382 @@
+/*Note: 1em equals 16px. Multiply the em value by 16 to know the pixel value again.*/
+@charset "utf-8";
+body {
+	background:url(Body-images/nature-photo1.jpg) no-repeat center;
+	background-size: cover;
+	animation: animate 15s ease-in-out 0s infinite forwards running alternate-reverse;
+}
+@keyframes animate{
+  0% {
+    background-image:url(Body-images/nature-photo1.jpg);
+  }
+  33% {
+    background-image:url(Body-images/nature-photo2.jpg);
+  }
+  67% {
+    background-image:url(Body-images/nature-photo3.jpg);
+  }
+  100% {
+    background-image:url(Body-images/nature-photo4.jpg);
+  }
+}
+.intro:hover, .intro2:hover {
+	transform: scale(1.25) rotate(-5deg);
+	transition-duration: 1.5s;
+}
+.intro:not(:hover), .intro2:not(:hover) {
+	transform: scale(1);
+	transition-duration: 1s;
+}
+.intro {
+	color: orange;
+	font: 700 2.5em "Amatic SC";
+	text-shadow: black 0.1em 0.1em 0.15em;
+	animation: fadeoutfadein 6s infinite;
+	margin: 50px;
+	position: relative;
+	top: 25px;
+}
+.intro2 {
+	color: orange;
+	font: 700 2.5em "Amatic SC";
+	text-shadow: black 0.1em 0.1em 0.15em;
+	animation: fadeoutfadein 6s infinite;
+	margin: 50px;
+	position: relative;
+	top: 25px;
+}
+@keyframes fadeoutfadein {
+	0% {
+		color: orange;
+	}
+	50% {
+		opacity: 0%;
+	}
+	100% {
+		color: orange;
+	}
+}
+header {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+	height: 400px;
+}
+.nature-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	height: 350px;
+	width: 400px;
+	min-width: 400px;
+	font: 550 6.875em "Dancing Script";
+	text-align: center;
+	color: white;
+	background:url(images/Leaf-1.png) no-repeat center;
+	background-size: cover;
+	filter: drop-shadow(5px 3px 7px #000000);
+	text-shadow: black 0.1em 0.1em 0.2em;
+	transition: opacity 0.5s linear 0s,
+	              color 0.5s linear 0s,
+			  font-size 0.5s linear 0s,
+			     height   1s linear 0s,
+				  width   1s linear 0s;
+	position: relative;
+	left: 15px;
+}
+.nature-header:hover {
+	opacity: 80%;
+	color:#6CF;
+	font-size: 8.125em;
+	height: 390px;
+	width: 440px;
+}
+.outdoors {
+	display: flex;
+	justify-content: center;
+	font: 500 2.063em "Amatic SC";
+	color: white;
+	position: relative;
+	bottom: 190px;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+.places {
+	text-align: center;
+	font: 4.69em "Dancing Script";
+	color: orange;
+	height: 70px;
+	margin: -5px;
+	z-index: 1;
+	width: auto;
+	filter: drop-shadow(5px 3px 7px #000000);
+	margin-top: -150px;
+	animation: fadeoutfadein2 6s infinite;
+	position: relative;
+	right: 10px;
+}
+@keyframes fadeoutfadein2 {
+	25% {
+		color: #6CF;
+	}
+	65% {
+		opacity: 0%;
+	}
+	
+	75% {
+		color: orange;
+	}
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	align-items: center;
+	height: 250px;
+}
+.leaf-button:hover {
+	opacity: 75%;
+	color: #6CF;
+	font-size: 3.5em;
+	height: 250px;
+}
+.leaf-button {
+	display: flex;
+	flex: 0 2 200px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	filter: drop-shadow(5px 3px 7px #000000);
+	font: 2.25em "Amatic SC";
+	height: 200px;
+	width: auto;
+	background:url(images/Leaf-Button1.png) no-repeat center;
+	background-size: cover;
+	transition: color 0.5s linear 0s,
+	          opacity 0.5s linear 0s,
+			font-size 0.5s linear 0s,
+			  height 0.35s linear 0s; 
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+.gallery-item {
+	display: flex;
+    width: 400px;
+	height: 300px;
+	--img-border: 3px solid GhostWhite;
+	border: var(--img-border);
+	/*border: 3px solid GhostWhite; (I commented out this code to practice the Variable and Function above this line) */
+	border-radius: 10px;
+	margin: 20px;
+}
+h3 {
+	margin-top: -3px;
+}
+.thumbnail-1 {
+	border-radius: 7px;
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
+	background: url(Maine-Photos/Maine-Photo1.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font: bold 1.5625em Oswald;
+	animation: animate-thumbnail-1 9s ease-in-out 0s infinite forwards running alternate-reverse;
+	filter: drop-shadow(5px 3px 7px #000000);
+}
+@keyframes animate-thumbnail-1{
+  0% {
+    background-image:url(Maine-Photos/Maine-Photo1.jpg);
+  }
+  50% {
+    background-image:url(Maine-Photos/Maine-Photo2.jpg);
+  }
+  100% {
+    background-image:url(Maine-Photos/Maine-Photo3.jpg);
+  }
+}
+.thumbnail-2 {
+	border-radius: 7px;
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
+	background: url(Colorado-Photos/Colorado-Photo1.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font: bold 1.5625em Oswald;
+	animation: animate-thumbnail-2 9s ease-in-out 0s infinite forwards running alternate-reverse;
+	filter: drop-shadow(5px 3px 7px #000000);
+}
+@keyframes animate-thumbnail-2{
+  0% {
+    background-image:url(Colorado-Photos/Colorado-Photo1.jpg);
+  }
+  50% {
+    background-image:url(Colorado-Photos/Colorado-Photo2.jpg);
+  }
+  100% {
+    background-image:url(Colorado-Photos/Colorado-Photo3.jpg);
+  }
+}
+.thumbnail-3 {
+	border-radius: 7px;
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
+	background: url(New-York-Photos/New-York-Photo1.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font: bold 1.5625em Oswald;
+	animation: animate-thumbnail-3 9s ease-in-out 0s infinite forwards running alternate-reverse;
+	filter: drop-shadow(5px 3px 7px #000000);
+}
+@keyframes animate-thumbnail-3{
+  0% {
+    background-image:url(New-York-Photos/New-York-Photo1.jpg);
+  }
+  50% {
+    background-image:url(New-York-Photos/New-York-Photo2.jpg);
+  }
+  100% {
+    background-image:url(New-York-Photos/New-York-Photo3.jpg);
+  }
+}
+.thumbnail-4 {
+	border-radius: 7px;
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
+	background: url(Italy-Photos/Italy-Photo1.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font: bold 1.5625em Oswald;
+	animation: animate-thumbnail-4 9s ease-in-out 0s infinite forwards running alternate-reverse;
+	filter: drop-shadow(5px 3px 7px #000000);
+}
+@keyframes animate-thumbnail-4{
+  0% {
+    background-image:url(Italy-Photos/Italy-Photo1.jpg);
+  }
+  50% {
+    background-image:url(Italy-Photos/Italy-Photo2.jpg);
+  }
+  100% {
+    background-image:url(Italy-Photos/Italy-Photo3.jpg);
+  }
+}
+.thumbnail-5 {
+	border-radius: 7px;
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
+	background: url(Aurora-Borealis-Photos/Aurora-Photo1.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font: bold 1.5625em Oswald;
+	animation: animate-thumbnail-5 9s ease-in-out 0s infinite forwards running alternate-reverse;
+	filter: drop-shadow(5px 3px 7px #000000);
+}
+@keyframes animate-thumbnail-5{
+  0% {
+    background-image:url(Aurora-Borealis-Photos/Aurora-Photo1.jpg);
+  }
+  50% {
+    background-image:url(Aurora-Borealis-Photos/Aurora-Photo2.jpg);
+  }
+  100% {
+    background-image:url(Aurora-Borealis-Photos/Aurora-Photo3.jpg);
+  }
+}
+.thumbnail-6 {
+	border-radius: 7px;
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
+	background: url(Del-Water-Gap-Photos/Del-Gap-Photo1.jpg) no-repeat center;
+	background-size: cover;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font: bold 1.5625em Oswald;
+	animation: animate-thumbnail-6 9s ease-in-out 0s infinite forwards running alternate-reverse;
+	filter: drop-shadow(5px 3px 7px #000000);
+}
+@keyframes animate-thumbnail-6{
+  0% {
+    background-image:url(Del-Water-Gap-Photos/Del-Gap-Photo1.jpg);
+  }
+  50% {
+    background-image:url(Del-Water-Gap-Photos/Del-Gap-Photo2.jpg);
+  }
+  100% {
+    background-image:url(Del-Water-Gap-Photos/Del-Gap-Photo3.jpg);
+  }
+}
+.thumbnail-1:hover:after, .thumbnail-2:hover:after, .thumbnail-3:hover:after, .thumbnail-4:hover:after, .thumbnail-5:hover:after, .thumbnail-6:hover:after {
+	content: "Click to learn more!";
+	font-family: "Amatic SC";
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-size: 1.75em;
+} 
+ :root {
+	    --img-border: 3px solid GhostWhite; /*add this to any element in the document, and it will add the GhostWhite border. (see ".gallery-item" class above)*/
+    }
+@media only screen and (min-width: 360px) and (orientation: portrait) {
+	.leaf-button {
+		height: 120px;
+		font-size: 2em;
+		margin-top: -50px;
+	}
+	.leaf-button:hover {
+	    font-size: 2.5em;
+	    height: 100px;
+    }
+	nav {
+		height: 150px;
+		margin-top: 150px;
+	}
+	.intro, .intro2 {
+		display: none;
+	}
+	.places {
+		font-size: 3.85em;
+		animation-name: none;
+		position: relative;
+	    right: 0px;
+		margin-bottom: -125px;
+	}
+	.nature-header {
+		position: relative;
+		left: 0px;
+	}
+}
+@media screen and (max-width: 900px) { /* Dark Color Theme */
+	body {
+		animation-name: none;
+		background: #000;
+	}
+	.gallery-item {
+		border: 3px solid Orange;
+	}
+	.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .thumbnail-5, .thumbnail-6 {
+		filter: none;
+    }
