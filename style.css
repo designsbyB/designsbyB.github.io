@@ -1,22 +1,22 @@
 /*Note: 1em equals 16px. Multiply the em value by 16 to know the pixel value again.*/
 @charset "utf-8";
 body {
-	background:url(Body-images/nature-photo1.jpg) no-repeat center;
+	background:url(./images/Body-images/nature-photo1.jpg) no-repeat center;
 	background-size: cover;
 	animation: animate 15s ease-in-out 0s infinite forwards running alternate-reverse;
 }
 @keyframes animate{
   0% {
-    background-image:url(Body-images/nature-photo1.jpg);
+    background-image:url(./images/Body-images/nature-photo1.jpg);
   }
   33% {
-    background-image:url(Body-images/nature-photo2.jpg);
+    background-image:url(./images/Body-images/nature-photo2.jpg);
   }
   67% {
-    background-image:url(Body-images/nature-photo3.jpg);
+    background-image:url(./images/Body-images/nature-photo3.jpg);
   }
   100% {
-    background-image:url(Body-images/nature-photo4.jpg);
+    background-image:url(./images/Body-images/nature-photo4.jpg);
   }
 }
 .intro:hover, .intro2:hover {
@@ -76,7 +76,7 @@ header {
 	font: 550 6.875em "Dancing Script";
 	text-align: center;
 	color: white;
-	background:url(images/Leaf-1.png) no-repeat center;
+	background:url(./images/images/Leaf-1.png) no-repeat center;
 	background-size: cover;
 	filter: drop-shadow(5px 3px 7px #000000);
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -155,7 +155,7 @@ nav {
 	font: 2.25em "Amatic SC";
 	height: 200px;
 	width: auto;
-	background:url(images/Leaf-Button1.png) no-repeat center;
+	background:url(./images/images/Leaf-Button1.png) no-repeat center;
 	background-size: cover;
 	transition: color 0.5s linear 0s,
 	          opacity 0.5s linear 0s,
@@ -187,7 +187,7 @@ h3 {
 	text-align: center;
 	padding: 1rem;
 	width: 100%;
-	background: url(Maine-Photos/Maine-Photo1.jpg) no-repeat center;
+	background: url(./images/Maine-Photos/Maine-Photo1.jpg) no-repeat center;
 	background-size: cover;
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -197,13 +197,13 @@ h3 {
 }
 @keyframes animate-thumbnail-1{
   0% {
-    background-image:url(Maine-Photos/Maine-Photo1.jpg);
+    background-image:url(./images/Maine-Photos/Maine-Photo1.jpg);
   }
   50% {
-    background-image:url(Maine-Photos/Maine-Photo2.jpg);
+    background-image:url(./images/Maine-Photos/Maine-Photo2.jpg);
   }
   100% {
-    background-image:url(Maine-Photos/Maine-Photo3.jpg);
+    background-image:url(./images/Maine-Photos/Maine-Photo3.jpg);
   }
 }
 .thumbnail-2 {
@@ -212,7 +212,7 @@ h3 {
 	text-align: center;
 	padding: 1rem;
 	width: 100%;
-	background: url(Colorado-Photos/Colorado-Photo1.jpg) no-repeat center;
+	background: url(./images/Colorado-Photos/Colorado-Photo1.jpg) no-repeat center;
 	background-size: cover;
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -222,13 +222,13 @@ h3 {
 }
 @keyframes animate-thumbnail-2{
   0% {
-    background-image:url(Colorado-Photos/Colorado-Photo1.jpg);
+    background-image:url(./images/Colorado-Photos/Colorado-Photo1.jpg);
   }
   50% {
-    background-image:url(Colorado-Photos/Colorado-Photo2.jpg);
+    background-image:url(./images/Colorado-Photos/Colorado-Photo2.jpg);
   }
   100% {
-    background-image:url(Colorado-Photos/Colorado-Photo3.jpg);
+    background-image:url(./images/Colorado-Photos/Colorado-Photo3.jpg);
   }
 }
 .thumbnail-3 {
@@ -237,7 +237,7 @@ h3 {
 	text-align: center;
 	padding: 1rem;
 	width: 100%;
-	background: url(New-York-Photos/New-York-Photo1.jpg) no-repeat center;
+	background: url(./images/New-York-Photos/New-York-Photo1.jpg) no-repeat center;
 	background-size: cover;
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -247,13 +247,13 @@ h3 {
 }
 @keyframes animate-thumbnail-3{
   0% {
-    background-image:url(New-York-Photos/New-York-Photo1.jpg);
+    background-image:url(./images/New-York-Photos/New-York-Photo1.jpg);
   }
   50% {
-    background-image:url(New-York-Photos/New-York-Photo2.jpg);
+    background-image:url(./images/New-York-Photos/New-York-Photo2.jpg);
   }
   100% {
-    background-image:url(New-York-Photos/New-York-Photo3.jpg);
+    background-image:url(./images/New-York-Photos/New-York-Photo3.jpg);
   }
 }
 .thumbnail-4 {
@@ -262,7 +262,7 @@ h3 {
 	text-align: center;
 	padding: 1rem;
 	width: 100%;
-	background: url(Italy-Photos/Italy-Photo1.jpg) no-repeat center;
+	background: url(./images/Italy-Photos/Italy-Photo1.jpg) no-repeat center;
 	background-size: cover;
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -272,13 +272,13 @@ h3 {
 }
 @keyframes animate-thumbnail-4{
   0% {
-    background-image:url(Italy-Photos/Italy-Photo1.jpg);
+    background-image:url(./images/Italy-Photos/Italy-Photo1.jpg);
   }
   50% {
-    background-image:url(Italy-Photos/Italy-Photo2.jpg);
+    background-image:url(./images/Italy-Photos/Italy-Photo2.jpg);
   }
   100% {
-    background-image:url(Italy-Photos/Italy-Photo3.jpg);
+    background-image:url(./images/Italy-Photos/Italy-Photo3.jpg);
   }
 }
 .thumbnail-5 {
@@ -287,7 +287,7 @@ h3 {
 	text-align: center;
 	padding: 1rem;
 	width: 100%;
-	background: url(Aurora-Borealis-Photos/Aurora-Photo1.jpg) no-repeat center;
+	background: url(./images/Aurora-Borealis-Photos/Aurora-Photo1.jpg) no-repeat center;
 	background-size: cover;
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -297,13 +297,13 @@ h3 {
 }
 @keyframes animate-thumbnail-5{
   0% {
-    background-image:url(Aurora-Borealis-Photos/Aurora-Photo1.jpg);
+    background-image:url(./images/Aurora-Borealis-Photos/Aurora-Photo1.jpg);
   }
   50% {
-    background-image:url(Aurora-Borealis-Photos/Aurora-Photo2.jpg);
+    background-image:url(./images/Aurora-Borealis-Photos/Aurora-Photo2.jpg);
   }
   100% {
-    background-image:url(Aurora-Borealis-Photos/Aurora-Photo3.jpg);
+    background-image:url(./images/Aurora-Borealis-Photos/Aurora-Photo3.jpg);
   }
 }
 .thumbnail-6 {
@@ -312,7 +312,7 @@ h3 {
 	text-align: center;
 	padding: 1rem;
 	width: 100%;
-	background: url(Del-Water-Gap-Photos/Del-Gap-Photo1.jpg) no-repeat center;
+	background: url(./images/Del-Water-Gap-Photos/Del-Gap-Photo1.jpg) no-repeat center;
 	background-size: cover;
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -322,13 +322,13 @@ h3 {
 }
 @keyframes animate-thumbnail-6{
   0% {
-    background-image:url(Del-Water-Gap-Photos/Del-Gap-Photo1.jpg);
+    background-image:url(./images/Del-Water-Gap-Photos/Del-Gap-Photo1.jpg);
   }
   50% {
-    background-image:url(Del-Water-Gap-Photos/Del-Gap-Photo2.jpg);
+    background-image:url(./images/Del-Water-Gap-Photos/Del-Gap-Photo2.jpg);
   }
   100% {
-    background-image:url(Del-Water-Gap-Photos/Del-Gap-Photo3.jpg);
+    background-image:url(./images/Del-Water-Gap-Photos/Del-Gap-Photo3.jpg);
   }
 }
 .thumbnail-1:hover:after, .thumbnail-2:hover:after, .thumbnail-3:hover:after, .thumbnail-4:hover:after, .thumbnail-5:hover:after, .thumbnail-6:hover:after {
@@ -380,3 +380,4 @@ h3 {
 	.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .thumbnail-5, .thumbnail-6 {
 		filter: none;
     }
+}
