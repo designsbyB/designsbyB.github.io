@@ -1,0 +1,71 @@
+@charset "utf-8";
+body {
+  background-color: black;
+}
+.CO-Container {
+   width: 100%;
+   min-height: 200px;
+}
+.CO-Panoramic {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px 5px 30px 5px;
+}
+.Colorado-Panoramic-Text-Container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+h1 {
+  width: 100%;
+  height: 100%;
+	font: 100 15em "Anton";
+	color: transparent;
+	background:url(./images/Colorado-Photos/Colorado-Photo3.jpg) no-repeat center;
+	background-size: cover;
+  background-position: center;
+	background-clip: text;
+	filter: drop-shadow(5px 3px 7px #000000);
+}
+
+.CO-Slideshow-Container {
+  width: 100%;
+  max-height: 400px;
+  display: flex;
+  margin: 30px 5px 30px 5px;
+  border: 2px solid white;
+}
+.CO-Slideshow {
+    background: url(./images/Colorado-Photos/Colorado-Photo1.jpg) no-repeat center;
+	  background-size: cover;
+    animation: colorado-slideshow 9s ease-in-out 0s infinite forwards running alternate-reverse;
+    min-height: 375px;  
+    min-width: 500px;
+    display: inline-flex;
+}
+@keyframes colorado-slideshow {
+  0% {
+    background-image:url(./images/Colorado-Photos/Colorado-Photo1.jpg);
+  }
+  50% {
+    background-image:url(./images/Colorado-Photos/Colorado-Photo2.jpg);
+  }
+  100% {
+    background-image:url(./images/Colorado-Photos/Colorado-Photo3.jpg);
+  }
+}
+.CO-Slideshow-Text {
+    min-width: 200px;
+    max-height: 300px;
+    font-family: "Roboto";
+	  font-weight: 250;
+	  font-size: 1.25em;
+	  /*filter: drop-shadow(5px 3px 10px #000000);*/
+    color: white;
+    display: inline-flex;
+    padding: 25px;
+}
