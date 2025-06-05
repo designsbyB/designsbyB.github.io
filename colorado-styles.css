@@ -2,16 +2,6 @@
 body {
   background-color: black;
 }
-.CO-Container {
-   width: 100%;
-   min-height: 200px;
-}
-.CO-Panoramic {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 30px 5px 30px 5px;
-}
 .Colorado-Panoramic-Text-Container {
   display: flex;
   align-items: center;
@@ -25,13 +15,20 @@ h1 {
   height: 100%;
 	font: 100 15em "Anton";
 	color: transparent;
-	background:url(./images/Colorado-Photos/Colorado-Photo3.jpg) no-repeat center;
+	background:url(./images/Colorado-Photos/Colorado-Photo4.jpg) no-repeat center;
 	background-size: cover;
   background-position: center;
 	background-clip: text;
 	filter: drop-shadow(5px 3px 7px #000000);
 }
-
+nav {
+  display: flex;
+}
+.navigation {
+  font-family: Roboto;
+  color: white;
+  margin: 0 auto;
+}
 .CO-Slideshow-Container {
   width: 100%;
   max-height: 400px;
@@ -60,12 +57,84 @@ h1 {
 }
 .CO-Slideshow-Text {
     min-width: 200px;
-    max-height: 300px;
+    max-height: 500px;
     font-family: "Roboto";
-	  font-weight: 250;
+	  font-weight: 100;
 	  font-size: 1.25em;
 	  /*filter: drop-shadow(5px 3px 10px #000000);*/
     color: white;
-    display: inline-flex;
     padding: 25px;
+    overflow:auto;
+    display: inline-flex;
+    text-indent: 48px;
 }
+
+.container {
+  padding: 2rem;
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-X: auto;
+  scroll-snap-type: X mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: Start;
+  object-fit: cover;
+}
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  z-index: 1;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.CO-Container {
+   width: 100%;
+   min-height: 200px;
+}
+.CO-Panoramic {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px 5px 30px 5px;
+}*/
