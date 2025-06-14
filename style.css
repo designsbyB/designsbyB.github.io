@@ -5,7 +5,7 @@ body {
 	background-size: cover;
 	animation: animate 15s ease-in-out 0s infinite forwards running alternate-reverse;
 }
-@keyframes animate{
+@keyframes animate {
   0% {
     background-image:url(./images/Body-images/nature-photo1.jpg);
   }
@@ -98,7 +98,7 @@ header {
 .outdoors {
 	display: flex;
 	justify-content: center;
-	font: 500 2.063em "Amatic SC";
+	font: 500 2.063em "Dancing Script";
 	color: white;
 	position: relative;
 	bottom: 190px;
@@ -237,7 +237,7 @@ h3 {
 	text-align: center;
 	padding: 1rem;
 	width: 100%;
-	background: url(./images/New-York-Photos/New-York-Photo1.jpg) no-repeat center;
+	background: url(./images/San-Fran-Photos/golden-gate-bridge-1.jpg) no-repeat center;
 	background-size: cover;
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -247,13 +247,13 @@ h3 {
 }
 @keyframes animate-thumbnail-3{
   0% {
-    background-image:url(./images/New-York-Photos/New-York-Photo1.jpg);
+    background-image:url(./images/San-Fran-Photos/golden-gate-bridge-1.jpg);
   }
   50% {
-    background-image:url(./images/New-York-Photos/New-York-Photo2.jpg);
+    background-image:url(./images/San-Fran-Photos/powell-street-san-fran-3.jpg);
   }
   100% {
-    background-image:url(./images/New-York-Photos/New-York-Photo3.jpg);
+    background-image:url(./images/San-Fran-Photos/famous-painted-ladies-san-fran-2.jpg);
   }
 }
 .thumbnail-4 {
