@@ -1,0 +1,26 @@
+@charset "utf-8";
+body {
+    background-color: crimson;
+}
+.paragraph-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    background-color: black;
+    background-image: url(./images/Italy-Photos/Italy-Pic-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sliding-paragraph {
+    position: absolute;
+    top: 0;
+    transform: translateY(-200%);
+    transition: transform 0.75s ease-in-out;
+    color: white;
+    padding: 20px;
+    
+}
+.paragraph-container:hover .sliding-paragraph {
+    transform: translateY(0);
+}

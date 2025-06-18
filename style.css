@@ -245,7 +245,7 @@ h3 {
 	animation: animate-thumbnail-3 9s ease-in-out 0s infinite forwards running alternate-reverse;
 	filter: drop-shadow(5px 3px 7px #000000);
 }
-@keyframes animate-thumbnail-3{
+@keyframes animate-thumbnail-3 {
   0% {
     background-image:url(./images/San-Fran-Photos/golden-gate-bridge-1.jpg);
   }
