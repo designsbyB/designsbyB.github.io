@@ -24,3 +24,21 @@ body {
 .paragraph-container:hover .sliding-paragraph {
     transform: translateY(0);
 }
+nav {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 20px;
+}
+.button {
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    flex: 0 1 75px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
