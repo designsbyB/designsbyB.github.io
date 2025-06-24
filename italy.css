@@ -1,9 +1,15 @@
 @charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: crimson;
 }
 .paragraph-container {
     position: relative;
+    border: 2px solid skyblue;
     width: 100%;
     height: 300px;
     overflow: auto;
@@ -11,6 +17,7 @@ body {
     background-image: url(./images/Italy-Photos/Italy-Pic-1.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom: 10px;
 }
 .sliding-paragraph {
     position: absolute;
@@ -27,9 +34,12 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    border: 2px solid white;
-    margin: 10px;
+    border: 2px solid skyblue;
+    margin: 10px 0px 10px 0px;
     padding: 20px;
+    background: url("./images/Italy-Photos/Italy-Photo2.jpg") no-repeat center;
+    background-size: cover;
+    background-position: center;
 }
 .button {
     align-items: center;
@@ -41,4 +51,34 @@ nav {
     border: 1px solid white;
     border-radius: 10px;
     text-align: center;
+    color: crimson;
+    background-color: white;
+}
+/*-----Styling below for article with text wrapped around-----*/
+.article-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    border: 2px solid white;
+}
+img {
+    max-width: 425px;
+    float: left;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.italy-article {
+    margin: 50px auto;
+    width: 70%;
+}
+.italy-article-text {
+    color: white;
+}
+.italy-article-text h2 {
+    font-size: 42px;
+}
+.italy-article-text p {
+    font-size: 16px;
 }
