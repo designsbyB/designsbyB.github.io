@@ -109,6 +109,7 @@ header {
 	position: relative;
 	bottom: 190px;
 	text-shadow: black 0.1em 0.1em 0.2em;
+	text-align: center;
 }
 .places {
 	text-align: center;
@@ -140,19 +141,17 @@ nav {
 	flex-wrap: wrap;
     justify-content: center;
 	align-content: center;
-    margin: 10px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
     padding: 10px;
 	background-size: cover;
 	background-position: center;
 	background: url("./images/images/Nav-Leaves-2.jpg") no-repeat center;
-	height: auto;
-	max-height: 200px;
+	height: 100px;
 	width: 100%;
-	aspect-ratio: 3 / 1;
 	filter: drop-shadow(5px 3px 7px #000000);
 	--img-border: 2px solid GhostWhite;
 	border: var(--img-border);
-}
+    }
 .button:hover {
 	background-color: orange;
 	color: white;
@@ -186,9 +185,6 @@ nav {
 	/*border: 3px solid GhostWhite; (I commented out this code to practice the Variable and Function above this line) */
 	border-radius: 10px;
 	margin: 20px;
-}
-h3 {
-	margin-top: -3px;
 }
 .thumbnail-1 {
 	border-radius: 7px;
@@ -359,6 +355,9 @@ h3 {
 	}
 }
 @media only screen and (max-width: 900px) { /* Dark Color Theme */
+	.footer-links {
+		border: 3px solid orange;
+	}
 	body {
 		animation-name: none;
 		background: #000;
@@ -369,6 +368,10 @@ h3 {
 	.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4, .thumbnail-5, .thumbnail-6 {
 		filter: none;
     }
+	.places {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
 }
 @media only screen and (max-width: 360px) and (orientation: portrait) {
 	.places {
@@ -376,9 +379,38 @@ h3 {
 		line-height: 50px;
 		margin: 0px 20px 0px 20px;
 	}
-}
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-    nav {
-		margin-top: 50px;
+	.nature-header {
+		font-size: 5.25em;
 	}
+	.nature-header:hover {
+		font-size: 6em;
+	}
+	.outdoors {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 330px) and (orientation: portrait) {
+	nav {
+		height: 250px;
+	}
+}
+.footer-links {
+	display: flex;
+	width: 100%;
+	height: auto;
+	background-color: black;
+	justify-content: center;
+}
+.footer-link-top {
+	flex-wrap: wrap;
+	font-family: "Oswald";
+	font-size: 16px;
+	color: white;
+	margin: 25px 10px 25px 10px;
+	transition: color 0.75s linear 0s,
+	        font-size 0.75s linear 0s;
+}
+.footer-link-top:hover {
+	color: orange;
+	font-size: 24px;
 }
