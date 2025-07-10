@@ -53,6 +53,11 @@ nav {
     text-align: center;
     color: crimson;
     background-color: white;
+    transition: background-color 0.75s linear 0s;
+}
+.button:hover {
+    background-color: crimson;
+    color: white;
 }
 /*-----Styling below for article with text wrapped around-----*/
 .article-body {
@@ -60,18 +65,17 @@ nav {
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    border: 2px solid white;
 }
-img {
+.italy-article {
+    margin: 50px auto;
+    width: 70%;
+}
+.italy-article-img {
     max-width: 425px;
     float: left;
     border: 2px solid white;
     border-radius: 10px;
     margin-right: 10px;
-}
-.italy-article {
-    margin: 50px auto;
-    width: 70%;
 }
 .italy-article-text {
     color: white;
@@ -81,4 +85,23 @@ img {
 }
 .italy-article-text p {
     font-size: 16px;
+}
+
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+	.italy-article-img {
+		max-width: 325px;
+        margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+	.italy-article-img {
+		max-width: 200px;
+	}
+    .italy-article-text h2 {
+        font-size: 35px;
+    }
+    .italy-article {
+        margin-right: 50px;
+        margin-top: 25px;
+    }
 }
