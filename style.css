@@ -92,7 +92,7 @@ header {
 				  width   1s linear 0s;
 	position: relative;
 	left: 15px;
-	margin: 10px 0px 75px 0px;;
+	margin: 50px 0px 75px 0px;
 }
 .nature-header:hover {
 	opacity: 80%;
@@ -107,7 +107,7 @@ header {
 	font: 500 2.063em "Dancing Script";
 	color: white;
 	position: relative;
-	bottom: 190px;
+	bottom: 170px;
 	text-shadow: black 0.1em 0.1em 0.2em;
 	text-align: center;
 }
@@ -136,39 +136,19 @@ header {
 		color: orange;
 	}
 }
-nav {
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: center;
-	align-content: center;
-    margin: 0px 0px 10px 0px;
-    padding: 10px;
-	background-size: cover;
-	background-position: center;
-	background: url("./images/images/Nav-Leaves-2.jpg") no-repeat center;
-	height: 100px;
-	width: 100%;
-	filter: drop-shadow(5px 3px 7px #000000);
-	--img-border: 2px solid GhostWhite;
-	border: var(--img-border);
-    }
 .button:hover {
-	background-color: orange;
 	color: white;
 	}
 .button {
-	align-items: center;
     align-content: center;
     margin: 10px;
-	flex: 0 1 75px;
-    width: 50px;
+    width: 75px;
     height: 50px;
-    border: 1px solid white;
-    border-radius: 10px;
     text-align: center;
-    color: orange;
-    background-color: white;
-    transition: background-color 0.75s linear 0s;
+    color: darkorange;
+    transition: color 0.5s linear 0s;
+	font-size: 18px;
+	font-family: "Oswald";
 }
 .gallery {
 	display: flex;
@@ -397,20 +377,7 @@ nav {
 .footer-links {
 	display: flex;
 	width: 100%;
-	height: auto;
-	background-color: black;
+	height: 75px;
+	background-color: darkblue;
 	justify-content: center;
-}
-.footer-link-top {
-	flex-wrap: wrap;
-	font-family: "Oswald";
-	font-size: 16px;
-	color: white;
-	margin: 25px 10px 25px 10px;
-	transition: color 0.75s linear 0s,
-	        font-size 0.75s linear 0s;
-}
-.footer-link-top:hover {
-	color: orange;
-	font-size: 24px;
 }
