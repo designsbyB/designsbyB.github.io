@@ -25,8 +25,7 @@ body {
     transform: translateY(-200%);
     transition: transform 0.75s ease-in-out;
     color: white;
-    padding: 20px;
-    
+    padding: 20px; 
 }
 .paragraph-container:hover .sliding-paragraph {
     transform: translateY(0);
@@ -86,7 +85,6 @@ nav {
 .italy-article-text p {
     font-size: 16px;
 }
-
 @media only screen and (max-width: 500px) and (orientation: portrait) {
 	.italy-article-img {
 		max-width: 325px;
@@ -105,7 +103,6 @@ nav {
         margin-top: 25px;
     }
 }
-
 .card-container {
     display: flex;
     justify-content: center;
