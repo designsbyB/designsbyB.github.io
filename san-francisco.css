@@ -45,7 +45,8 @@ nav {
 .San-Fran-Text-Container p {
     background:url(./images/San-Fran-Photos/san-fran-for-text-clip-2.jpg) no-repeat center;
 	background-size: cover;
-	background-clip: text;
+	-webkit-background-clip: text;
+    background-clip: text;
     background-position: center;
     color: transparent;
 	font: 100 10vw "Anton";
