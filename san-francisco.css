@@ -26,9 +26,6 @@ nav {
     background-color: none;
     transition-duration: 1s;
 }
-.SF-img-wrapper {
-    position: relative;
-}
 .San-Fran-Text-Container {
     display: flex;
     align-items: center;
@@ -70,7 +67,6 @@ nav {
 .San-Fran-Text-Container:hover {
     border: 3px solid blueviolet;
 }
-
 .About-Container {
     padding: 15px;
 }
