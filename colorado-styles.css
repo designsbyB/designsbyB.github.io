@@ -9,9 +9,9 @@ nav {
   background-size: cover;
   margin-bottom: 20px;
   border: 2px solid darkorange;
+  justify-content: space-evenly;
 }
 .navigation {
-  font-family: Roboto;
   color: white;
   background-color: rgb(136, 109, 20);
   border: 2px solid darkorange;
@@ -20,6 +20,8 @@ nav {
   padding: 10px;
   height: auto;
   border-radius: 10px;
+  font: bold 1.5em Roboto;
+  letter-spacing: 1px;
 }
 .Colorado-Panoramic-Text-Container {
   display: flex;
