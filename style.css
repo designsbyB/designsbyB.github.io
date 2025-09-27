@@ -136,20 +136,6 @@ header {
 		color: orange;
 	}
 }
-.button:hover {
-	color: white;
-	}
-.button {
-    align-content: center;
-    margin: 10px;
-    width: 75px;
-    height: 50px;
-    text-align: center;
-    color: darkorange;
-    transition: color 0.5s linear 0s;
-	font-size: 18px;
-	font-family: "Oswald";
-}
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -365,19 +351,30 @@ header {
 	.nature-header:hover {
 		font-size: 6em;
 	}
-	.outdoors {
-		text-align: center;
+}
+@media only screen and (max-width: 412px) and (orientation: portrait) {
+	.button {
+		font-size: 1em;
 	}
 }
-@media only screen and (max-width: 330px) and (orientation: portrait) {
-	nav {
-		height: 250px;
+.button:hover {
+	color: white;
 	}
+.button {
+    align-content: center;
+    margin: 10px;
+    width: 4.6875em;
+    height: 3.125em;
+    text-align: center;
+    color: darkorange;
+    transition: color 0.5s linear 0s;
+	font-size: 1.125em;
+	font-family: "Oswald";
 }
 .footer-links {
 	display: flex;
 	width: 100%;
-	height: 75px;
+	height: 4.6875em;
 	background-color: darkblue;
 	justify-content: center;
 }
