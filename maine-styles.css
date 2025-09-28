@@ -22,7 +22,7 @@ body {
 .container1 {
 	width: 100%;
 	height: 650px;
-	margin: 40px 0px 30px 0px;
+	margin: -400px 0px 10px 0px;
 }
 .container1-img {
 	width: 100%;
@@ -33,6 +33,7 @@ body {
 }
 nav {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
 	justify-items: center;
@@ -100,43 +101,33 @@ a:hover {
 }
 .Maine-Title {
 	display: flex;
-	align-content: center;
 	align-items: center;
-	justify-content: center;
-	justify-items: center;
+    aspect-ratio: 4/1;
 }
 .welcome {
-	font: 900 5em "Dancing Script";
+	display: flex;
 	text-align: center;
+	font: 900 10vw "Dancing Script";
 	display: block;
 	color: beige;
-	margin-bottom: 10px;
-	margin-top: -125px;
+	margin: 0 auto;
 	text-shadow: black 0.1em 0.1em 0.125em;
 	position: relative;
-	top: 200px;
+	top: 20px;
 	z-index: 1;
 }
 h1 {
-	display: flex;
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-	justify-items: center;
 	width: 400px;
-	height: 150px;
-	margin: 20px;
-	margin-top: -150px;
-	margin-bottom: -20px;
+	height: auto;
+	margin: -125px 0px;
 	flex: 2 3 150px;
-	font: 900 9.375em "Rammetto One";
+	font: 900 20vw "Rammetto One";
+	text-align: center;
 	color: transparent;
 	background:url(./images/Maine-page-images/map-of-maine1.png) no-repeat center;
 	background-size: cover;
 	background-clip: text;
 	filter: drop-shadow(5px 3px 7px #000000);
-	position: relative;
-	top: 300px;
 	z-index: 1;
 }
 #lobster-btn:hover {
@@ -165,22 +156,21 @@ h1 {
 }
 .lobster-container {
 	display: flex;
-	width: 100%;
 	height: 800px;
-	filter: drop-shadow(0px 0px 7px #F00);
-	margin: 10px 0px 10px 0px;
+	border: 3px solid red;
+	margin: 50px auto;
+	background: url(./images/Maine-page-images/Red-Lobster-with-view.jpg) no-repeat center;
+	background-size: cover;
 }
 .lobster-text {
 	display: block;
 	color: white;
-	font-family: "Oswald";
-	font-weight: bold;
-	font-size: 1.875em;
+	font: bold 3em Roboto;
+	letter-spacing: 1px;
 	text-shadow: black 0.05em 0.075em 0.05em;
-	background: url(./images/Maine-page-images/Red-Lobster-with-view.jpg) no-repeat center;
-	background-size: cover;
-	padding: 25px 25px 25px 25px;
-	margin: 10px 0px 10px 0px;
+	padding: 20px 20px;
+	margin: 10px auto;
+	overflow: auto;
 }
 section {
 	display: flex;
@@ -202,26 +192,15 @@ iframe {
 	margin-bottom: -60px;
 }
 #link-back-to-top {
-	font-family: "Amatic SC";
-	font-weight: bold;
-	font-size: 1.875em;
+	font: bold 2.5em Roboto;
 	filter: drop-shadow(5px 3px 10px #000000);
-	margin: 0 auto;
+	margin: 25px auto;
+	text-transform: uppercase;
 }
 @media only screen and (min-width: 360px) and (orientation: portrait) {
-	h1 {
-		height: 150px;
-		width: 200px;
-		font-size: 100px;
-	}
-	.welcome {
-		font-size: 4.375em;
-		margin-top: -40px;
-		margin-bottom: -20px;
-	}
 	.lobster-container {
 	    margin: 0px 0px 175px 0px;
-}
+    }
     .lobster-text {
 		font-size: 1.5625em;
 		padding-top: 50px;

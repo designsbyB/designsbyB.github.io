@@ -65,11 +65,12 @@ h1 {
   }
 }
 .CO-Slideshow-Text {
-    font: 100 1.25em "Roboto";
+    font: 400 1.75em "Roboto";
     color: white;
     padding: 0.625em;
     overflow: auto;
     text-indent: 3em;
+    letter-spacing: 1px;
 }
 .container {
   padding: 2rem;
