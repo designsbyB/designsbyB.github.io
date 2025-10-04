@@ -21,13 +21,12 @@ body {
 }
 .container1 {
 	width: 100%;
-	height: 650px;
+	height: 40.625rem;
 	margin: -400px 0px 10px 0px;
 }
 .container1-img {
-	width: 100%;
+	width: clamp(360px,100%,1500px);
 	height: auto;
-	display: block;
 	opacity: 70%;
 	border: 4px solid #C66300;
 }
