@@ -1,4 +1,7 @@
 @charset "utf-8";
+html {
+    font-size: 16px;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,13 +33,15 @@ a {
 .button {
     display: flex;
     flex-wrap: wrap;
-    width: 75px;
-    height: 50px;
+    font: bolder 1.5rem "Roboto";
+    padding: 1rem;
+    width: 6rem;
+    height: 4rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 0.625rem;
     transition: background-color 2s linear 0s,
                  text-decoration 2s linear 0s;
     box-shadow: 8px 8px 8px rgba(0,0,0,0.35);
@@ -50,29 +55,26 @@ a {
     display: flex;
     background: url(./images/Aurora-Borealis-Photos/Aurora-Photo-unsplash-4.jpg) no-repeat center;
     background-size: cover;
-    min-width: 250px;
-    width: 60%;
-    min-height: 100vh;
+    width: 75%;
+    height: 500px;
+    overflow: auto;
     justify-content: center;
-    align-items: center;
     margin: 25px auto;
     border-radius: 20px;
     border: 3px solid limegreen;
     text-align: center;
 }
 .article-text {
-    overflow: auto;
     color: white;
     margin: 20px;
-    padding: 20px;
-    width: 70%;
+    width: 90%;
     min-width: 250px;
+    font: bold 1.75rem "Roboto";
+    letter-spacing: 1px;
 }
 .article-title {
-    font-family: "Dancing Script";
+    font: bold 6rem "Dancing Script";
     margin: 0 auto;
-    font-size: 55px;
-    font-weight: bold;
     color: lightblue;
     text-shadow: black 0.1em 0.1em 0.2em;
     min-width: 250px;
