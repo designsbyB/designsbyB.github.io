@@ -9,14 +9,14 @@ nav {
 }
 @media only screen and (max-width: 600px) {
 	.button {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
 	}
 }
 .button {
     color: blueviolet;
     min-width: 6rem;
     min-height: 2rem;
-    font: bold 1rem "Roboto";
+    font: bold 1.25rem "Roboto";
     padding: 0.5em;
     text-decoration: none;
     border-radius: 0.333rem;
