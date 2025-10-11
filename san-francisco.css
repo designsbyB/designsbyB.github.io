@@ -1,4 +1,7 @@
 @charset "utf-8";
+html {
+    font-size: 16px;
+}
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -6,16 +9,14 @@ nav {
 }
 @media only screen and (max-width: 360px) and (orientation: portrait) {
 	.button {
-		width: 5.25rem;
-        height: 2.25rem;
-        font-size: 20px;
+        font-size: 0.85rem;
 	}
 }
 .button {
     color: blueviolet;
-    width: 6rem;
-    height: 2.8125rem;
-    font: bold 1.25rem "Roboto";
+    min-width: 6rem;
+    min-height: 2rem;
+    font: bold 1rem "Roboto";
     padding: 0.5rem;
     text-decoration: none;
     border-radius: 0.333rem;
