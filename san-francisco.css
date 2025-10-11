@@ -7,9 +7,9 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
-@media only screen and (max-width: 360px) and (orientation: portrait) {
+@media only screen and (max-width: 600px) {
 	.button {
-        font-size: 0.85rem;
+        font-size: 1.125rem;
 	}
 }
 .button {
@@ -17,19 +17,18 @@ nav {
     min-width: 6rem;
     min-height: 2rem;
     font: bold 1rem "Roboto";
-    padding: 0.5rem;
+    padding: 0.5em;
     text-decoration: none;
     border-radius: 0.333rem;
     border: 0.125rem solid lavender;
     text-align: center;
     align-content: center;
-    margin: 1.25rem;
+    margin: 1.25em;
     transition: background-color 1.5s linear 0s;
 }
 .button:hover {
     background-color: lightgrey;
     border: none;
-    /*border-radius: 50%;*/
     transition-duration: 1s;
 }
 .button:not(:hover) {
