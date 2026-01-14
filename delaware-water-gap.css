@@ -16,16 +16,22 @@ nav {
 }
 .button {
     align-content: center;
-    margin: 10px;
-    flex: 0 1 75px;
-    width: 50px;
-    height: 50px;
+    margin: 20px;
+    flex: 0 1 7rem;
+    width: 6rem;
+    height: 4rem;
     border: 1px solid white;
     border-radius: 10px;
+    font: bolder 1.5rem "Roboto";
     text-align: center;
-    color: crimson;
+    color: white;
     background-color: rgba(120, 249, 253, 0.5);
     transition: background-color 0.75s linear 0s;
+    text-decoration: none;
+}
+.button:hover {
+  text-decoration: underline;
+  font-style: italic;
 }
 .del-img-container {
     position: relative;
