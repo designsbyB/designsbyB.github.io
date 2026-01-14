@@ -1,0 +1,65 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    background: url("./images/Del-Water-Gap-Photos/Delaware-Nature-Photo-Nav.jpg") no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+.button {
+    align-content: center;
+    margin: 10px;
+    flex: 0 1 75px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    color: crimson;
+    background-color: rgba(120, 249, 253, 0.5);
+    transition: background-color 0.75s linear 0s;
+}
+.del-img-container {
+    position: relative;
+    overflow: auto;
+    border: 2px solid white;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+	  background:url(./images/Del-Water-Gap-Photos/Del-Gap-Photo1.jpg) no-repeat center;
+	  animation: animate-dwg 15s ease-in-out 0s infinite forwards running alternate-reverse;
+    justify-items: center;
+}
+@keyframes animate-dwg {
+  0% {
+    background-image:url(./images/Del-Water-Gap-Photos/Del-Gap-Photo1.jpg);
+  }
+  50% {
+    background-image:url(./images/Del-Water-Gap-Photos/Del-Gap-Photo2.jpg);
+  }
+  100% {
+    background-image:url(./images/Del-Water-Gap-Photos/Del-Gap-Photo3.jpg);
+  }
+}
+.sliding-paragraph {
+    position: absolute;
+    top: 25px;
+    transform: translateY(-150%);
+    transition: transform 0.75s ease-in-out;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 20px; 
+    font: 950 10em "Dancing Script";
+}
+.del-img-container:hover .sliding-paragraph {
+    transform: translateY(0);
+}
