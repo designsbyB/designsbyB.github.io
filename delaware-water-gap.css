@@ -1,4 +1,7 @@
 @charset "utf-8";
+body {
+  background-color: skyblue;
+}
 * {
     margin: 0;
     padding: 0;
@@ -68,4 +71,30 @@ nav {
 }
 .del-img-container:hover .sliding-paragraph {
     transform: translateY(0);
+}
+.article-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.delaware-article {
+  margin: 25px auto;
+  width: 90%;
+}
+.delaware-article-img {
+  max-width: 450px;
+  float: left;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.delaware-article-text {
+  color: white;
+}
+.delaware-article-text h2 {
+  font-size: 45px;
+}
+.delaware-article-text p {
+  font-szie: 16px;
 }
