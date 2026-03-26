@@ -62,15 +62,30 @@ nav {
 }
 .sliding-paragraph {
     position: absolute;
-    top: 25px;
-    transform: translateY(-150%);
+    top: -25px;
+    transform: translateY(-125%);
     transition: transform 0.75s ease-in-out;
     color: rgba(255, 255, 255, 0.9);
     padding: 20px; 
-    font: 950 10em "Dancing Script";
+    font: 75 15vw "Anton";
+	  color: transparent;
+	  background:url(./images/Del-Water-Gap-Photos/Delaware-Nature-Photo-Nav.jpg) no-repeat center;
+	  background-size: cover;
+	  background-clip: text;
+    -webkit-text-stroke: 1px white;
 }
 .del-img-container:hover .sliding-paragraph {
     transform: translateY(0);
+}
+.del-img-container:hover:after {
+   content: "Water Gap";
+   font: 30 15vw "Dancing Script";
+   color: white;
+   display: block;
+   position: absolute;
+   bottom: 50px;
+   transition: transform 0.75s ease-in-out;
+   transform: translateY(5%);
 }
 .article-body {
   display: flex;
